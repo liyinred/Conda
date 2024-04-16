@@ -50,3 +50,9 @@ jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
 #解挂会话 ctr+a+d
 #exit  结束会话
 ```
+
+## 安装pytorch and tensorflow(Wenhao 环境)
+```bash
+pip install tensorflow
+# kill 1889755 取消pid为改数字的进程防止显存一直占用
+```
