@@ -30,6 +30,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2/
 conda config --set show_channel_urls yes
 
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ## 安装jupyterlab(base环境)
@@ -42,13 +43,13 @@ conda install ipykernel #Wenhao环境中也要有
 
 ## 启动jupyterlab(base环境)
 ```bash
-screen -mS d2l #创建并连接到一个新的 tmux 会话，会话名称为 "d2l"
+screen -mS d2l # 创建并连接到一个新的 tmux 会话，会话名称为 "d2l"
 jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
 
 # screen -ls
 # screen -r d2l 进入会话
-#解挂会话 ctr+a+d
-#exit  结束会话
+# 解挂会话 ctr+a+d
+# exit  结束会话
 ```
 
 ## 安装pytorch and tensorflow(Wenhao 环境)
