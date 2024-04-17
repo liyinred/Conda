@@ -1,4 +1,6 @@
-# Linux conda 环境搭建
+<div align="center">
+   <h1>Linux conda 环境搭建</h1>
+</div>
 
 ## 查看CPU and GPU
 ```bash
