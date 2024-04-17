@@ -56,4 +56,7 @@ jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
 ```bash
 pip install tensorflow
 # kill 1889755 取消pid为改数字的进程防止显存一直占用
+
+tensorboard --logdir logs/fit --bind_all  #  开启tensorboard 并运行所有ip
+
 ```
