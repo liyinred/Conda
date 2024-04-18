@@ -71,7 +71,7 @@ conda install ipykernel
 conda remove --name Wenhao --all
 ```
 
-## 测试tensorflow和pytorch的GPU是否可用
+## 分别测试tensorflow和pytorch的GPU是否可用
 ```python
 import torch
 
