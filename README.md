@@ -20,7 +20,7 @@ conda create --name Wenhao python=3.10
 
 ```
 
-## 更换镜像源  [镜像链接](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
+## 更换镜像源---[镜像链接](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
 ```bash
 conda config --show channels
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
