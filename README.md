@@ -2,6 +2,10 @@
    <h1>Linux conda 环境搭建</h1>
 </div>
 
+```bash
+pip freeze > requirements.txt
+```
+
 ## 查看CPU and GPU
 ```bash
 lscpu
