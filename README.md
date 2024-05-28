@@ -2,8 +2,15 @@
    <h1>Linux conda 环境搭建</h1>
 </div>
 
+## pip批量更新
 ```bash
 pip freeze > requirements.txt
+
+ # 查看可更新包：
+ pip list  --outdated --format=columns
+ # 批量下载并更新：
+ pip install pip-review
+ pip-review --local --interactive
 ```
 
 ## 查看CPU and GPU
