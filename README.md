@@ -2,7 +2,7 @@
    <h1>Linux conda 环境搭建</h1>
 </div>
 
-## pip批量更新
+## pip批量更新所有包
 ```bash
 pip freeze > requirements.txt
 
