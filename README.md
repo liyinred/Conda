@@ -7,6 +7,7 @@
 ## pip批量更新所有包
 ```bash
 pip freeze > requirements.txt
+pipreqs --ignore .venv --force
 
  # 查看可更新包：
  pip list  --outdated --format=columns
