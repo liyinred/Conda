@@ -2,7 +2,7 @@
    <h1>Linux Conda 环境搭建</h1>
 </div>
 
-conda配置环境变量(https://blog.csdn.net/yinjun3215/article/details/123705879)
+[conda配置环境变量](https://blog.csdn.net/yinjun3215/article/details/123705879)
 
 ## pip批量更新所有包
 ```bash
