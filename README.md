@@ -129,4 +129,6 @@ print("TensorFlow 默认设备:", tf.test.gpu_device_name())
 ## linux中安装花生壳
 ```bash
 sudo apt install ./phddns_5.3.0_amd64.deb
+
+dpkg -r phddns
 ```
