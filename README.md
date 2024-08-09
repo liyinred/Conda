@@ -4,6 +4,8 @@
 
 [conda配置环境变量](https://blog.csdn.net/yinjun3215/article/details/123705879)
 
+[vscode打开的终端有2个conda 环境](https://v2ex.com/t/1017004)
+
 ## pip批量更新所有包
 ```bash
 pip freeze > requirements.txt
