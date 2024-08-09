@@ -126,3 +126,7 @@ else:
 # 可以通过以下方式查看当前 TensorFlow 是否使用 GPU 加速
 print("TensorFlow 默认设备:", tf.test.gpu_device_name())
 ```
+## linux中安装花生壳
+```bash
+sudo apt install ./phddns_5.3.0_amd64.deb
+```
