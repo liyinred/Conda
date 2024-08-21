@@ -1,4 +1,4 @@
-# FastAPI + Vue 3 网站开发教程
+# FastAPI + Vue 3 部署
 
 ## 1. 环境准备
 
