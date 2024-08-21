@@ -10,7 +10,9 @@
 
 ### 前端 (Vue 3)
 
-1. 安装 Node.js
+1. 安装 Node.js 国内源
+   - ```npm config set registry http://mirrors.cloud.tencent.com/npm/```
+   - ```npm config get registry```
 2. 安装 Vue CLI:
    ```
    npm install -g @vue/cli
