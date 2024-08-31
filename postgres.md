@@ -92,27 +92,6 @@ sudo systemctl restart postgresql
 
 * * *
 
-
-### 总结
-
-组合在一起，`sudo -i -u postgres` 的意思是：以 `postgres` 用户的身份登录到一个新的shell会话，且这个会话的环境变量和配置文件都与 `postgres` 用户的正常登录会话一致。这通常用于执行PostgreSQL数据库的管理任务，因为 `postgres` 用户拥有对数据库系统的完全控制权。
-
-#### 示例
-
-当您执行这条命令时，系统会将您从当前用户切换到 `postgres` 用户。切换成功后，您的命令提示符可能会变成 `postgres@hostname:~$`，表示您现在以 `postgres` 用户身份在操作系统中工作。
-
-这是管理PostgreSQL的一个安全且常见的做法，因为使用超级用户权限直接管理数据库可以避免权限问题，同时保持系统的安全性。
-
-* * *
-
-**You:**
-
-postgres 用户的 密码是什么
-
-* * *
-
-**ChatGPT:**
-
 在大多数情况下，安装PostgreSQL时，系统不会自动为 `postgres` 用户设置密码，尤其是在基于Debian的Linux发行版（如Ubuntu）中。因此，默认情况下，您无法使用密码登录 `postgres` 用户。
 
 ### 如果您需要为 `postgres` 用户设置密码，可以按照以下步骤操作：
@@ -231,7 +210,7 @@ sudo nano /etc/postgresql/<版本号>/main/pg_hba.conf
 
 ```plaintext
 # 允许该网段的用户通过密码（md5或scram-sha-256）连接数据库
-host    all             all             192.168.1.0/24            md5
+host    all             all             192.168.1.0/24            scram-sha-256
 ```
 
 * 保存并退出编辑器。
