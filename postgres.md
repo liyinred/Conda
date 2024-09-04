@@ -1,4 +1,4 @@
-在Linux中成功安装PostgreSQL后，您需要执行以下步骤来配置和使用PostgreSQL数据库系统。以下是详细的操作步骤：
+**在Linux中成功安装PostgreSQL后，您需要执行以下步骤来配置和使用PostgreSQL数据库系统。以下是详细的操作步骤：**
 
 ### 1. 检查PostgreSQL服务状态
 
