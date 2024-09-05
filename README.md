@@ -61,7 +61,7 @@ conda install ipykernel #Wenhao环境中也要有
 
 ## 启动jupyterlab(base环境)
 ```bash
-screen -mS d2l # 创建并连接到一个新的 tmux 会话，会话名称为 "d2l"
+screen -S d2l # 创建并连接到一个新的 tmux 会话，会话名称为 "d2l"
 jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
 
 # screen -ls
