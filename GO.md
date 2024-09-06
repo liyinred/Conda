@@ -1,4 +1,4 @@
-(配置GOPATH)[https://www.topgoer.com/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E9%85%8D%E7%BD%AEgopath.html]
+[配置GOPATH](https://www.topgoer.com/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E9%85%8D%E7%BD%AEgopath.html)
 ### 步骤 1：初始化 Go 模块
 
 在你的项目目录下，执行以下命令来初始化 Go 模块：
