@@ -71,7 +71,7 @@ func main() {
 go run main.go
 ```
 
-访问 [http://localhost:8080/ping]，你会得到预期的结果。
+访问 http://localhost:8080/ping
 
 ### 进一步说明
 
