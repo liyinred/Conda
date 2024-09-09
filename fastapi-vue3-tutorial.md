@@ -14,6 +14,7 @@
    - ```npm config set registry http://mirrors.cloud.tencent.com/npm/```
    - ```npm config get registry```
    - [更新所有包](https://blog.csdn.net/m0_59975180/article/details/132830929)
+   - ```npm up```
 2. 安装 Vue CLI:
    ```
    npm install -g @vue/cli
