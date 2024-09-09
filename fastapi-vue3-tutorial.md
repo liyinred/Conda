@@ -13,8 +13,7 @@
 1. 安装 Node.js 国内源
    - ```npm config set registry http://mirrors.cloud.tencent.com/npm/```
    - ```npm config get registry```
-   - [更新所有包](https://blog.csdn.net/m0_59975180/article/details/132830929)
-   - ```npm up```
+   - ```npm up``` [更新所有包](https://blog.csdn.net/m0_59975180/article/details/132830929)
 2. 安装 Vue CLI:
    ```
    npm install -g @vue/cli
