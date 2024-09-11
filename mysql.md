@@ -52,6 +52,7 @@ CREATE USER 'wli'@'%' IDENTIFIED BY 'your_password';
 
 -- 赋予权限
 GRANT SELECT, INSERT ON miniprogram.* TO 'wli'@'%';
+GRANT UPDATE ON miniprogram.user TO 'wli'@'%';
 
 -- 刷新权限
 FLUSH PRIVILEGES;
