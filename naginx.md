@@ -14,3 +14,11 @@ sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d mini.msbiox.com
 ```
 
+xelatex-all
+```bash
+sudo apt update
+
+sudo apt install texlive-full
+
+xelatex --version
+```
