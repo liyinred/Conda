@@ -22,3 +22,8 @@ sudo apt install texlive-full
 
 xelatex --version
 ```
+
+fastapi
+```
+gunicorn -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8080 main_new:app --log-config gunicorn_logging.conf
+```
