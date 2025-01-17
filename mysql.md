@@ -1,5 +1,11 @@
 ```sql
-SELECT user, host FROM mysql.user WHERE user = 'wli';
+mysql -u root -p
+
+SHOW GRANTS FOR 'wenhao'@'%';
+
+GRANT PROCESS ON *.* TO 'wenhao'@'%';
+FLUSH PRIVILEGES;
+
 ```
 
 从你提供的信息来看，用户 `wli` 确实存在于 MySQL 用户表中，并且可以从 `%` 和 `localhost` 连接。为了确保权限正确分配，你可以按照以下步骤进行操作：
