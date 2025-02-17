@@ -2,6 +2,11 @@
    <h1>Linux Conda 环境搭建</h1>
 </div>
 
+## conda 初始化 (解决不自动激活 base 环境的问题)
+```bash
+conda init
+```
+
 [**conda配置环境变量**](https://blog.csdn.net/yinjun3215/article/details/123705879)
 
 [**vscode打开的终端有2个conda 环境**](https://v2ex.com/t/1017004)
