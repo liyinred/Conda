@@ -40,6 +40,8 @@ DROP USER 'wli'@'localhost';
 
 ```sql
 CREATE USER 'wli'@'%' IDENTIFIED BY 'your_password';
+
+RENAME USER 'wenhao'@'%' TO 'wenhao'@'118.250.176.65';
 ```
 
 ### 3. 赋予权限
