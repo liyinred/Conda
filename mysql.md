@@ -44,6 +44,8 @@ FLUSH PRIVILEGES;
 
 ```sql
 SHOW GRANTS FOR 'wli'@'%';
+
+SELECT user, host FROM mysql.user;
 ```
 
 ### 完整命令示例
