@@ -1,3 +1,12 @@
+### mysql 防止暴力破解
+```bash
+
+iptables -A INPUT -p tcp --dport 3306 -m state --state NEW -m recent --set
+
+iptables -A INPUT -p tcp --dport 3306 -m state --state NEW -m recent --update --seconds 60 --hitcount 5 -j DROP
+
+```
+
 ```sql
 mysql -u root -p
 
