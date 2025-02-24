@@ -9,8 +9,7 @@ iptables -D INPUT -p tcp --dport 3306 -m state --state NEW -m recent --set
 iptables -D INPUT -p tcp --dport 3306 -m state --state NEW -m recent --update --seconds 60 --hitcount 5 -j DROP
 
 sudo iptables -A INPUT -p tcp --dport 3306 -m state --state NEW ! -s 127.0.0.1 -m recent --set
-sudo iptables -A INPUT -p tcp --dport 3306 -m state --state NEW -m recent --update --seconds 60 --hitcount 5 -j DROP
-
+sudo iptables -A INPUT -p tcp --dport 3306 -m state --state NEW ! -s 127.0.0.1 -m recent --update --seconds 60 --hitcount 5 -j DROP
 
 sudo iptables -L INPUT -v -n --line-numbers
 
