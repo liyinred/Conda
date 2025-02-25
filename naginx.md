@@ -12,6 +12,9 @@ sudo apt update
 sudo apt install certbot python3-certbot-nginx
 
 sudo certbot --nginx -d mini.msbiox.com
+
+sudo certbot delete --cert-name mini.msbiox.com
+
 ```
 
 xelatex-all
