@@ -4,6 +4,9 @@ sudo systemctl restart nginx
 sudo nginx -t
 
 sudo systemctl status nginx
+
+tail -f /var/log/nginx/error.log
+
 ```
 
 Certbot
