@@ -7,6 +7,8 @@ sudo systemctl status nginx
 
 tail -f /var/log/nginx/error.log
 
+curl -I https://mini.msbiox.com/images/1.webp
+
 ```
 
 Certbot
@@ -35,8 +37,8 @@ gunicorn -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8080 main_new:app --lo
 ```
 
 
-config
-```text
+config_backup
+```Perl
 server {
     server_name mini.msbiox.com;
 
@@ -63,6 +65,30 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
 
+        limit_rate 200k;
+        limit_rate_after 0;
+    }
+
+    # location /images/ {
+    #     # alias /home/ubuntu/nginx-images/;
+    #     root /var/www/html/;
+    #     expires 7d;
+    #     add_header Cache-Control "public, max-age=604800";
+
+    #     limit_rate 200k;
+    #     limit_rate_after 0;
+    # }
+
+    location /images/ {
+        root /var/www/html/;
+    
+        # 启用 ETag 和 Last-Modified 头
+        etag on;
+    
+        # 取消固定的 expires 和 Cache-Control 设置
+        # expires off;
+        # add_header Cache-Control "public, must-revalidate";
+    
         limit_rate 200k;
         limit_rate_after 0;
     }
