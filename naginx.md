@@ -1,6 +1,12 @@
 ```bash
- redis-cli
-KEYS * 
+
+redis-cli
+
+redis-cli --raw
+
+KEYS *
+redis-cli DEL key_name
+
 ```
 
 
