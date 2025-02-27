@@ -1,4 +1,10 @@
 ```bash
+ redis-cli
+KEYS * 
+```
+
+
+```bash
 sudo systemctl restart nginx
 
 sudo nginx -t
