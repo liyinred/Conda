@@ -11,6 +11,8 @@ TTL products:None:7:荧光
 
 redis-cli DEL key_name
 
+FLUSHDB
+
 ```
 
 
