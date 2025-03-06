@@ -14,5 +14,8 @@ sudo docker stop 11ffc47deb05
 sudo docker rm 11ffc47deb05
 sudo docker logs xxx
 
+sudo docker images
+sudo docker rmi a088eea70396
+
 watch -d nvidia-smi
 ```
