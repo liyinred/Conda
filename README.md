@@ -36,6 +36,8 @@ bash Miniconda3-py39_24.3.0-0-Linux-x86_64.sh
 
 conda --version
 
+conda init
+
 conda create --name Wenhao python=3.10
 # conda remove --name Wenhao --all
 
