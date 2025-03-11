@@ -31,6 +31,8 @@ FLUSH PRIVILEGES;
 首先，删除现有的用户 `wli`，包括从 `%` 和 `localhost` 连接的用户：
 
 ```sql
+SELECT user, host FROM mysql.user;
+
 DROP USER 'wli'@'%';
 DROP USER 'wli'@'localhost';
 ```
