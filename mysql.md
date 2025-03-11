@@ -32,6 +32,7 @@ FLUSH PRIVILEGES;
 
 ```sql
 SELECT user, host FROM mysql.user;
+SHOW GRANTS FOR 'wenhao'@'118.250.176.65';
 
 DROP USER 'wli'@'%';
 DROP USER 'wli'@'localhost';
