@@ -33,6 +33,7 @@ FLUSH PRIVILEGES;
 ```sql
 SELECT user, host FROM mysql.user;
 SHOW GRANTS FOR 'wenhao'@'118.250.176.65';
+RENAME USER 'wenhao'@'118.250.176.65' TO 'wenhao'@'%';
 
 DROP USER 'wli'@'%';
 DROP USER 'wli'@'localhost';
