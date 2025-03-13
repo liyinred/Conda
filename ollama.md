@@ -18,4 +18,9 @@ sudo docker images
 sudo docker rmi a088eea70396
 
 watch -d nvidia-smi
+
+sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -e PORT=3002 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
+sudo docker run -d -p 3002:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
 ```
