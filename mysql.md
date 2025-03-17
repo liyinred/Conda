@@ -1,3 +1,28 @@
+### alembic
+```bash
+alembic init alembic
+
+# 打开 alembic.ini 文件，找到 sqlalchemy.url 配置项，将其修改为你的 PostgreSQL 数据库连接字符串。例如：
+sqlalchemy.url = mysql+pymysql://username:password@localhost/db_name
+
+# 在 alembic/env.py 文件中，找到 target_metadata 变量，并将其设置为你的 SQLAlchemy 模型的 Base.metadata
+from db_config import Base
+target_metadata = Base.metadata
+
+# 在修改了 SQLAlchemy 模型后，你可以使用以下命令创建一个新的迁移脚本：
+alembic revision --autogenerate -m "your migration message"
+
+alembic history
+
+alembic upgrade head
+
+alembic downgrade <revision_id>
+
+alembic current
+
+```
+
+
 ### mysql 防止暴力破解
 ```bash
 
