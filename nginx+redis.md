@@ -1,6 +1,6 @@
 ## radis
 ```bash
-sudo systemctl restart redis
+sudo systemctl restart redis-server
 
 
 redis-cli
