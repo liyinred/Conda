@@ -71,6 +71,8 @@ conda install ipykernel #Wenhao环境中也要有
 screen -S d2l # 创建并连接到一个新的 tmux 会话，会话名称为 "d2l"
 jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
 
+echo 'termcapinfo xterm* ti@:te@' >> ~/.screenrc
+
 # screen -ls
 # screen -r d2l 进入会话
 # 解挂会话 ctr+a+d
