@@ -1,4 +1,4 @@
-## radis
+`radis`
 ```bash
 sudo systemctl restart redis-server
 
@@ -31,7 +31,7 @@ curl -I https://mini.msbiox.com/images/1.webp
 
 ```
 
-Certbot
+`Certbot`
 ```bash
 sudo apt update
 sudo apt install certbot python3-certbot-nginx
@@ -42,7 +42,7 @@ sudo certbot delete --cert-name mini.msbiox.com
 
 ```
 
-xelatex-all
+`xelatex-all`
 ```bash
 sudo apt update
 
@@ -51,7 +51,7 @@ sudo apt install texlive-full
 xelatex --version
 ```
 
-fastapi
+`fastapi`
 ```
 gunicorn -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8080 main_new:app --log-config gunicorn_logging.conf
 ```
