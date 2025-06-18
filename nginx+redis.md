@@ -62,7 +62,6 @@ config_backup
 server {
     server_name mini.msbiox.com;
 
-    # 代理配置
     location /api/ {
         proxy_pass http://localhost:8080/;
         proxy_set_header Host $host;
@@ -70,9 +69,9 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
 
-        proxy_connect_timeout 120;
-        proxy_read_timeout 120;
-        proxy_send_timeout 120;
+        proxy_connect_timeout 10s;       # 连接后端服务器的超时时间
+        proxy_read_timeout 120s;         # 从后端读取响应的超时时间
+        proxy_send_timeout 60s;          # 向后端发送请求的超时时间
 
         limit_rate 200k;
         limit_rate_after 0;
@@ -129,17 +128,30 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 
+
+
     listen 443 ssl; # managed by Certbot
     ssl_certificate /etc/letsencrypt/live/mini.msbiox.com/fullchain.pem; # managed by Certbot
     ssl_certificate_key /etc/letsencrypt/live/mini.msbiox.com/privkey.pem; # managed by Certbot
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+    
+    
+    # ssl_certificate /etc/ssl/certificate1.crt;  # zeroSSL
+    # ssl_certificate_key /etc/ssl/private.key;   # zeroSSL
+
 
 }
 server {
-    listen 80;
+    if ($host = mini.msbiox.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
     server_name mini.msbiox.com;
-    return 301 https://$host$request_uri;
+    listen 80;
+    return 404; # managed by Certbot
+
 
 }
 ```
