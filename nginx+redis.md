@@ -57,7 +57,15 @@ gunicorn -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8080 main_new:app --lo
 ```
 
 
-config_backup
+
+```bash
+# 用符号链接命令启用配置
+sudo ln -s /etc/nginx/sites-available/my-site.conf /etc/nginx/sites-enabled/my-site.conf
+
+# 想禁用时只要删除对应符号链接，而不是直接删掉原配置文件
+sudo rm /etc/nginx/sites-enabled/my-site.conf
+```
+`/etc/nginx/sites-available/default`
 ```Perl
 server {
     server_name mini.msbiox.com;
