@@ -15,3 +15,15 @@ mkdir -p ~/.ssh
     User ubuntu
     IdentityFile "C:\Users\liwh\.ssh\id_rsa"
 ```
+
+**Git SSH Key (push public key to github)**
+
+```bash
+ssh-keygen -t ed25519 -C "wli@msbiox.com"
+
+git remote set-url origin git@github.com:liyinred/miniP-backend.git
+
+git remote -v
+
+ssh -T git@github.com
+```
