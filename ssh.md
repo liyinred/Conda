@@ -27,3 +27,4 @@ git remote -v
 
 ssh -T git@github.com
 ```
+<img width="990" height="474" alt="image" src="https://github.com/user-attachments/assets/e14410c8-636e-44dd-a749-7dc97e53f469" />
