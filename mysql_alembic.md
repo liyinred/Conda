@@ -23,24 +23,6 @@ alembic current
 
 ```
 
-
-### mysql 防止暴力破解
-```bash
-
-iptables -A INPUT -p tcp --dport 3306 -m state --state NEW -m recent --set
-
-iptables -A INPUT -p tcp --dport 3306 -m state --state NEW -m recent --update --seconds 60 --hitcount 5 -j DROP
-
-iptables -D INPUT -p tcp --dport 3306 -m state --state NEW -m recent --set
-iptables -D INPUT -p tcp --dport 3306 -m state --state NEW -m recent --update --seconds 60 --hitcount 5 -j DROP
-
-sudo iptables -A INPUT -p tcp --dport 3306 -m state --state NEW ! -s 127.0.0.1 -m recent --set
-sudo iptables -A INPUT -p tcp --dport 3306 -m state --state NEW ! -s 127.0.0.1 -m recent --update --seconds 60 --hitcount 5 -j DROP
-
-sudo iptables -L INPUT -v -n --line-numbers
-
-```
-
 ```sql
 sudo apt install mysql-server
 
@@ -88,6 +70,9 @@ RENAME USER 'wenhao'@'%' TO 'wenhao'@'118.250.176.65';
 
 ```sql
 GRANT SELECT, INSERT ON miniprogram.* TO 'wli'@'%';
+
+DROP DATABASE IF EXISTS miniprogram;
+CREATE DATABASE miniprogram CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 # PROCESS：允许用户查看所有正在运行的进程（使用 SHOW PROCESSLIST 命令）
 # *.* 表示这个权限适用于所有数据库的所有表
