@@ -43,6 +43,7 @@ sudo iptables -L INPUT -v -n --line-numbers
 ```
 
 ```sql
+sudo mysql
 mysql -u root -p
 
 SHOW GRANTS FOR 'wenhao'@'%';
