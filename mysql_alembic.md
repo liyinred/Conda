@@ -89,13 +89,12 @@ RENAME USER 'wenhao'@'%' TO 'wenhao'@'118.250.176.65';
 ```sql
 GRANT SELECT, INSERT ON miniprogram.* TO 'wli'@'%';
 
-PROCESS：允许用户查看所有正在运行的进程（使用 SHOW PROCESSLIST 命令）
-*.* 表示这个权限适用于所有数据库的所有表
+# PROCESS：允许用户查看所有正在运行的进程（使用 SHOW PROCESSLIST 命令）
+# *.* 表示这个权限适用于所有数据库的所有表
 
 # ALL PRIVILEGES：拥有对 miniprogram 数据库的所有权限
 # miniprogram.* 表示这个权限仅适用于 miniprogram 数据库的所有表
 # 包括 SELECT、INSERT、UPDATE、DELETE、CREATE、DROP、ALTER 等所有数据库操作权限
-
 GRANT PROCESS ON *.* TO `wenhao`@`%`
 GRANT ALL PRIVILEGES ON `miniprogram`.* TO `wenhao`@`%`
 ```
