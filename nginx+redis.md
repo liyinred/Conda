@@ -4,7 +4,6 @@
 sudo apt install redis-server
 sudo systemctl restart redis-server
 
-
 redis-cli
 
 redis-cli --raw
