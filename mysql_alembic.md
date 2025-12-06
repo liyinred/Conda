@@ -1,6 +1,5 @@
 ### alembic
 ```bash
-sudo apt install mysql-server
 
 alembic init alembic
 
@@ -43,7 +42,11 @@ sudo iptables -L INPUT -v -n --line-numbers
 ```
 
 ```sql
+sudo apt install mysql-server
+
 sudo mysql
+
+# 登录mysql，在默认安装时如果没有让我们设置密码，则直接回车就能登录成功。
 mysql -u root -p
 
 SHOW GRANTS FOR 'wenhao'@'%';
