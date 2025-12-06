@@ -1,5 +1,7 @@
 `radis`
 ```bash
+
+sudo apt install redis-server
 sudo systemctl restart redis-server
 
 
