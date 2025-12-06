@@ -49,6 +49,9 @@ sudo mysql
 # 登录mysql，在默认安装时如果没有让我们设置密码，则直接回车就能登录成功。
 mysql -u root -p
 
+# 编辑MySQL配置文件（ bind-address = 0.0.0.0 ）
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
 SHOW GRANTS FOR 'wenhao'@'%';
 
 GRANT PROCESS ON *.* TO 'wenhao'@'%';
