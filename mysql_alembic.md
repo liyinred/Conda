@@ -1,5 +1,7 @@
 ### alembic
 ```bash
+sudo apt install mysql-server
+
 alembic init alembic
 
 # 打开 alembic.ini 文件，找到 sqlalchemy.url 配置项，将其修改为你的 PostgreSQL 数据库连接字符串。例如：
