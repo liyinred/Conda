@@ -51,6 +51,7 @@ mysql -u root -p
 
 # 编辑MySQL配置文件（ bind-address = 0.0.0.0 ）
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo systemctl restart mysql
 
 SHOW GRANTS FOR 'wenhao'@'%';
 
