@@ -1,4 +1,4 @@
-### alembic
+### alembic (先迁移数据库再创建)
 ```bash
 
 alembic init alembic
