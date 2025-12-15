@@ -85,7 +85,7 @@ server {
         proxy_read_timeout 120s;         # 从后端读取响应的超时时间
         proxy_send_timeout 60s;          # 向后端发送请求的超时时间
 
-        limit_rate 200k;
+        limit_rate 500k;
         limit_rate_after 0;
     }
 
