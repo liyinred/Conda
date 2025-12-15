@@ -35,6 +35,8 @@ curl -I https://mini.msbiox.com/images/1.webp
 
 `Certbot`
 ```bash
+sudo chown ubuntu:ubuntu /etc/nginx/sites-enabled/default
+
 sudo apt update
 sudo apt install certbot python3-certbot-nginx
 
