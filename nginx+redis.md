@@ -69,6 +69,14 @@ sudo ln -s /etc/nginx/sites-available/my-site.conf /etc/nginx/sites-enabled/my-s
 # 想禁用时只要删除对应符号链接，而不是直接删掉原配置文件
 sudo rm /etc/nginx/sites-enabled/my-site.conf
 ```
+`Nginx 运行在 www-data 或 nginx 用户下，它默认没有权限访问 /home/ubuntu/ 目录。需要确保 Nginx 对该路径有读取和执行权限。`
+```bash
+# 允许其他用户（包括 www-data）进入 ubuntu 及其子目录
+sudo chmod +x /home/ubuntu
+sudo chmod +x /home/ubuntu/miniP-backend
+```
+
+
 `/etc/nginx/sites-available/default`
 ```Perl
 server {
