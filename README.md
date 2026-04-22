@@ -32,7 +32,8 @@ nvidia-smi
 
 ## 安装miniconda并创建环境
 ```bash
-bash Miniconda3-py39_24.3.0-0-Linux-x86_64.sh
+curl -O https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 
 conda --version
 
