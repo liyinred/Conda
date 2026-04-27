@@ -17,6 +17,8 @@ npm run build
 
 ```bash
 
+git config --global url."https://gh-proxy.org/https://github.com/".insteadOf "https://github.com/"
+
 # Download and install nvm:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 
