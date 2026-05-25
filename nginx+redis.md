@@ -18,7 +18,7 @@ FLUSHDB
 
 ```
 
-
+`nginx`
 ```bash
 sudo apt install nginx
 sudo systemctl restart nginx
