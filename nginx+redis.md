@@ -76,14 +76,13 @@ sudo chmod +x /home/ubuntu
 sudo chmod +x /home/ubuntu/miniP-backend
 ```
 
-
 `/etc/nginx/sites-available/default`
 ```Perl
 server {
     server_name mini.msbiox.com;
 
     location /api/ {
-        proxy_pass http://localhost:8080/;
+        proxy_pass http://localhost:8080;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
