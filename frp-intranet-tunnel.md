@@ -29,7 +29,7 @@ http://云服务器公网IP:18000
 ### 1. 下载 FRP
 
 ```bash
-wget https://github.com/fatedier/frp/releases/download/v0.62.1/frp_0.62.1_linux_amd64.tar.gz
+wget https://gh-proxy.org/https://github.com/fatedier/frp/releases/download/v0.62.1/frp_0.62.1_linux_amd64.tar.gz
 tar -xzf frp_0.62.1_linux_amd64.tar.gz
 cd frp_0.62.1_linux_amd64
 ```
