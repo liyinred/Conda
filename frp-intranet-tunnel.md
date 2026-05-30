@@ -43,6 +43,11 @@ bindPort = 7000
 
 auth.method = "token"
 auth.token = "换成一个足够复杂的随机字符串"
+
+webServer.addr = "0.0.0.0"
+webServer.port = 7500
+webServer.user = "admin"
+webServer.password = "strong-password"
 ```
 
 配置说明：
