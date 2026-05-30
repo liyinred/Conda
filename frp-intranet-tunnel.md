@@ -48,6 +48,10 @@ webServer.addr = "0.0.0.0"
 webServer.port = 7500
 webServer.user = "admin"
 webServer.password = "strong-password"
+
+allowPorts = [
+  { start = 6000, end = 7000 }
+]
 ```
 
 配置说明：
