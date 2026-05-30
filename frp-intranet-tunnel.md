@@ -50,7 +50,7 @@ webServer.user = "admin"
 webServer.password = "strong-password"
 
 allowPorts = [
-  { start = 6000, end = 7000 }
+  { start = 6000, end = 8000 }
 ]
 ```
 
