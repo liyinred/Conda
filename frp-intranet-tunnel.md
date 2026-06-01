@@ -29,9 +29,9 @@ http://云服务器公网IP:18000
 ### 1. 下载 FRP
 
 ```bash
-wget https://gh-proxy.org/https://github.com/fatedier/frp/releases/download/v0.62.1/frp_0.62.1_linux_amd64.tar.gz
-tar -xzf frp_0.62.1_linux_amd64.tar.gz
-cd frp_0.62.1_linux_amd64
+wget https://gh-proxy.org/https://github.com/fatedier/frp/releases/download/v0.68.1/frp_0.68.1_linux_amd64.tar.gz
+tar -xzf frp_0.68.1_linux_amd64.tar.gz
+cd frp_0.68.1_linux_amd64
 ```
 
 ### 2. 创建服务端配置
@@ -88,7 +88,7 @@ sudo ufw allow 18000/tcp
 Windows 可下载：
 
 ```text
-frp_0.62.1_windows_amd64.zip
+frp_0.68.1_windows_amd64.zip
 ```
 
 ### 1. 创建客户端配置
