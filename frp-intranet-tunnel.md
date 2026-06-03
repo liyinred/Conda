@@ -77,6 +77,7 @@ allowPorts = [
 如果服务器使用 `ufw`：
 
 ```bash
+sudo ufw status
 sudo ufw allow 7000/tcp
 sudo ufw allow 18000/tcp
 ```
