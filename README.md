@@ -47,16 +47,14 @@ conda create --name Wenhao python=3.10
 ## 更换镜像源---[镜像链接](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
 ```bash
 conda config --show channels
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
 
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2/
+conda config --add channels http://mirrors.aliyun.com/anaconda/pkgs/main
+conda config --add channels http://mirrors.aliyun.com/anaconda/pkgs/r
+conda config --add channels http://mirrors.aliyun.com/anaconda/pkgs/msys2
 conda config --set show_channel_urls yes
 
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
+pip config set install.trusted-host mirrors.aliyun.com
 ```
 
 ## 安装jupyterlab(base环境)
