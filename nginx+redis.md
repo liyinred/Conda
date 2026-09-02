@@ -1,4 +1,4 @@
-`radis`
+`redis`
 ```bash
 
 sudo apt install redis-server
@@ -45,6 +45,25 @@ sudo certbot --nginx -d mini.msbiox.com
 sudo certbot delete --cert-name mini.msbiox.com
 
 ```
+`单公网IP申请SSL证书`
+```bash
+sudo apt update
+sudo apt install snapd -y
+sudo snap install core
+sudo snap refresh core
+sudo snap install --classic certbot
+```
+
+```bash
+nginx -T | grep -n "root "
+
+sudo certbot certonly \
+  --preferred-profile shortlived \
+  --webroot \
+  --webroot-path /var/www/html \
+  --ip-address 175.4.50.58
+```
+
 
 `xelatex-all`
 ```bash
