@@ -55,13 +55,6 @@ sudo apt install texlive-full
 xelatex --version
 ```
 
-`fastapi`
-```
-gunicorn -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8080 main_new:app --log-config gunicorn_logging.conf
-```
-
-
-
 ```bash
 # 用符号链接命令启用配置
 sudo ln -s /etc/nginx/sites-available/my-site.conf /etc/nginx/sites-enabled/my-site.conf
