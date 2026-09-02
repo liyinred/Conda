@@ -1,3 +1,5 @@
+[*配置GOPATH*](https://www.topgoer.com/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E9%85%8D%E7%BD%AEgopath.html)
+
 # Golang 快速入门（Go Modules 与 Gin）
 
 本文档简洁说明在 Go 模块模式下如何初始化项目、引入 gin 依赖、运行示例程序，并在国内环境下配置 Go Module 镜像以加速依赖下载。
@@ -151,5 +153,3 @@ go env -w GOSUMDB="sum.golang.google.cn"
   - 使用 `go get -u <module>`，或在 `go.mod` 中调整版本后运行 `go mod tidy`。
 
 ---
-
-如果你希望我直接提交此更新到仓库，我已为你准备好变更：我将替换 `Golang.md` 的内容并提交到仓库默认分支（使用默认分支名）。
