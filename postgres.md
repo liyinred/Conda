@@ -1,4 +1,4 @@
-# PostgreSQL 快速配置与局域网连接（精简版）
+# PostgreSQL 快速配置与局域网连接
 
 本文档说明在 Linux 上安装 PostgreSQL 后的常用配置步骤，并包含允许局域网（LAN）连接的要点。
 
