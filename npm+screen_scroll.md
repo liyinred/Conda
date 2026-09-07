@@ -13,6 +13,9 @@ npm config set registry https://registry.npmmirror.com
 npm install
 npm run build
 
+apt update
+apt install -y nodejs npm
+
 ```
 
 ```bash
