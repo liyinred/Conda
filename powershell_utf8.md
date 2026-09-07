@@ -29,11 +29,11 @@ $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Obj
 PowerShell 中执行：
 
 ```powershell
-[Environment]::SetEnvironmentVariable("PYTHONIOENCODING", "utf-8", "User")
+[Environment]::SetEnvironmentVariable("PYTHONUTF8", "1", "User")
 ```
 
 或手动设置：右键"此电脑" → 属性 → 高级系统设置 → 环境变量
-- 新建用户变量：`PYTHONIOENCODING` = `utf-8`
+- 新建用户变量：`PYTHONUTF8` = `1`
 
 ## 验证
 
