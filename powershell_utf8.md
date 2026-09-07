@@ -26,8 +26,6 @@ $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Obj
 
 ## Python 配置
 
-### 环境变量（推荐）
-
 PowerShell 中执行：
 
 ```powershell
@@ -36,16 +34,6 @@ PowerShell 中执行：
 
 或手动设置：右键"此电脑" → 属性 → 高级系统设置 → 环境变量
 - 新建用户变量：`PYTHONIOENCODING` = `utf-8`
-
-### 脚本配置
-
-在 Python 脚本开头添加：
-
-```python
-import sys, io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
-```
 
 ## 验证
 
