@@ -2,6 +2,20 @@
 
 > PowerShell 和 Python 的 UTF-8 快速配置指南
 
+## Windows Terminal 通用设置
+
+打开 Windows Terminal，按 `Ctrl + ,` 打开 settings.json，在 `profiles.defaults` 中添加：
+
+```json
+"profiles": {
+  "defaults": {
+    "encoding": "utf-8"
+  }
+}
+```
+
+此设置对所有 shell（PowerShell、CMD、WSL）生效。
+
 ## PowerShell 配置
 
 以管理员身份打开 PowerShell，依次执行：
@@ -47,6 +61,6 @@ python -c "import sys; print(sys.stdout.encoding)"
 
 ## 常见问题
 
-**配置后无效？** → 重启 PowerShell/IDE
+**配置后无效？** → 重启 PowerShell/Terminal/IDE
 
 **Python 仍乱码？** → 确保文件头声明 `# -*- coding: utf-8 -*-`
