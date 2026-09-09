@@ -126,3 +126,47 @@ server {
 
 }
 ```
+
+```Perl
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name 175.4.50.58;
+
+    # Let's Encrypt HTTP-01 challenge
+    location /.well-known/acme-challenge/ {
+        root /var/www/html;
+    }
+
+    # 其他 HTTP 请求跳转 HTTPS
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+
+    server_name 175.4.50.58;
+
+    ssl_certificate /etc/letsencrypt/live/175.4.50.58/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/175.4.50.58/privkey.pem;
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+
+        proxy_http_version 1.1;
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}
+```
