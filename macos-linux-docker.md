@@ -39,6 +39,6 @@
    - 持久化新增路由规则，确保系统重启后仍然生效。
 
  **Colima 与 Docker 容器开机启动**
-   - 当前 Docker context 使用 Colima 虚拟机。
+   -  Docker context 使用 Colima 虚拟机。
    - 将 Colima 配置为系统级服务，确保系统开机后自动启动。(以实现系统开机后启动, 而不是用户登录后启动)
    - 配置 Docker 容器在系统重启后自动恢复运行。
