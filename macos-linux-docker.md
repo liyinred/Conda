@@ -1,6 +1,6 @@
 ## Linux
 
-DHCP 获取局域网IP 进行固定
+- DHCP 获取局域网IP 进行固定
 
 **通过 Linux 上的 Docker Compose 启动 New API 后，服务与 mihomo 的 TUN 模式存在冲突：只有关闭 TUN 模式，才能从外网访问 New API 的 Web 服务。***
 
@@ -24,7 +24,8 @@ DHCP 获取局域网IP 进行固定
 
 
 ## MacOS
-请完成以下 macOS 系统配置与网络排障任务：
+
+- DHCP 获取局域网IP 进行固定
 
 **用户权限与本地网络访问**
    - 为当前用户 `xiaohe_macmini` 配置免密使用管理员权限。
