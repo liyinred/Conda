@@ -1,5 +1,7 @@
 ## Linux
 
+DHCP 获取局域网IP 进行固定
+
 **通过 Linux 上的 Docker Compose 启动 New API 后，服务与 mihomo 的 TUN 模式存在冲突：只有关闭 TUN 模式，才能从外网访问 New API 的 Web 服务。***
 
 需要检查并调整以下配置：
